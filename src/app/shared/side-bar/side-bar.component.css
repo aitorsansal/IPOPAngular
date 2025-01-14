@@ -1,0 +1,16 @@
+.sideBar{
+    margin: 0 left;
+    border: 2px solid rgb(57, 41, 54);
+    background-color: var(--sl-color-gray-4);
+    font: 1.2em sans-serif;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    width: 15.5rem;
+    height: 100vh;
+    position: fixed;
+    left: 5px;
+    top: 145px;
+    padding: .5rem 1rem;
+}
+

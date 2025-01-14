@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: #36113e;
+	--sl-color-accent: #a400c0;
+	--sl-color-accent-high: #e3b6ed;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #f2e9ff;
+	--sl-color-gray-2: #c8bcd7;
+	--sl-color-gray-3: #9680b2;
+	--sl-color-gray-4: #624c7b;
+	--sl-color-gray-5: #422c58;
+	--sl-color-gray-6: #301b45;
+	--sl-color-black: #1c1326;
+	background-color: var(--sl-color-black);
+	color: var(--sl-color-accent-high);
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

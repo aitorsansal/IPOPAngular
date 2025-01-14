@@ -1,0 +1,37 @@
+img{
+    filter: invert(28%) sepia(99%) saturate(7489%) hue-rotate(357deg) brightness(107%) contrast(113%);
+    margin: 20px left;
+    width: 210px;
+    height: auto;
+    padding-right: 50px;
+    padding-left: 15px;
+}
+h1{
+    margin: 0 left;
+}
+h2{
+    margin: 0 right;
+    font-size: larger;
+}
+section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0;
+}
+.topBar{
+    border: 2px solid var(--sl-color-b);
+    background-color: var(--sl-color-gray-4);
+    font: 1.2em sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: auto;
+    box-shadow: 0px -15px 15px 7px #0000002e;    
+}
