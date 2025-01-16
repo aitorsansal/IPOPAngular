@@ -1,18 +1,21 @@
 <div class="bottomBar">
-    @if (leftElement.isActive) {
-        <div class="leftElement" [routerLink]="[leftElement.linkTo]">
-            <mat-icon>keyboard_arrow_left</mat-icon>
-            <p>{{leftElement.text}}</p>
+    <div class="topRow">
+        <div class="centerElement">
+            <p>{{centerElement}}</p>
         </div>
-    }
-    <div class="centerElement">
-        <p>{{centerElement}}</p>
     </div>
-    @if (rightElement.isActive) {
-        <div class="rightElement" [routerLink]="[rightElement.linkTo]">
-            <p>{{rightElement.text}}</p>
-            <mat-icon>keyboard_arrow_right</mat-icon>
-        </div>
-    }
+    <div class="bottomRow">
+        @if (leftElement.isActive) {
+            <div class="leftElement" [routerLink]="[leftElement.linkTo]">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+                <p>{{leftElement.text}}</p>
+            </div>
+        }
+        @if (rightElement.isActive) {
+            <div class="rightElement" [routerLink]="[rightElement.linkTo]">
+                <p>{{rightElement.text}}</p>
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </div>
+        }
+    </div>
 </div>
-

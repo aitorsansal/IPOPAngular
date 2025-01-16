@@ -1,38 +1,91 @@
 .bottomBar {
-    display: flex;            
-    align-items: center;       
-    justify-content: space-between;
-    position: fixed;          
-    bottom: 0;                
-    left: 0;                   
-    right: 0;                  
-    height: 60px;                
-    background-color: var(--sl-color-gray-6);   
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--sl-color-gray-6);
     color: var(--sl-color-accent-high);
-    padding: 10px;           
-    z-index: 1000;             
+    padding: 10px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottomRow {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.topRow {
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bottomRow {
+    justify-content: space-between;
+    width: 100%;
 }
 
 .leftElement,
 .rightElement {
     display: flex;
-    align-items: center; 
+    align-items: center;
     cursor: pointer;
-    position: absolute;
 }
 
-.leftElement{
-    left: 0;
+.leftElement {
+    justify-content: flex-start;
 }
 
-.rightElement{
-    right: 0;
+.rightElement {
+    justify-content: flex-end;
+    margin-left: auto;
 }
 
 .centerElement {
-    position: absolute;         
-    left: 50%;                
-    transform: translateX(-50%); 
-    text-align: center;         
-    white-space: nowrap;       
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    .bottomBar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .topRow, .bottomRow {
+        width: 100%;
+    }
+
+    .leftElement, .rightElement {
+        width: 50%;
+        justify-content: center;
+    }
+
+    .leftElement {
+        justify-content: flex-start;
+    }
+
+    .rightElement {
+        justify-content: flex-end;
+    }
+
+    .centerElement {
+        margin-bottom: 10px;
+    }
+    .topRow{
+        left: 0;
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
 }
