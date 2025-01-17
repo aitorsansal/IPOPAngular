@@ -12,11 +12,11 @@ export class HomeComponent implements OnInit{
 
     ngOnInit(): void {
       let pages : PagesChanger = {
-        next:'carta presentación',
+        next:'currículum vitae',
         previous:'',
         nextActive:true,
         previousActive:false,
-        nextLink:'/presentation',
+        nextLink:'/curriculum',
         previousLink:'',
         centerElement:'Home Page'
       }

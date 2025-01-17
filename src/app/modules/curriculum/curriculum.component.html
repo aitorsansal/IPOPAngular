@@ -1,1 +1,49 @@
-<p>curriculum works!</p>
+<div class="curriculumScreenContainer">
+    <div class="personalInformation">
+        <div class="imgContainer">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="textInformation">
+            <h1>Aitor Sánchez</h1>
+            <h3>Desarrollo Aplicaciones Multiplataforma</h3>
+            <h3>Desarrollo de Videojuegos</h3>
+            <div class="socials">
+                @for (socials of socialIcons; track $index) {
+                    <a href="{{socials.link}}">
+                        <ng-icon name="{{socials.icon}}"/>
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="curriculumContaier">
+        <h2>Sobre mí</h2>
+        <mat-divider></mat-divider>
+        <p>ñlakjsdfñlakdjsf</p>
+        <br>
+        <h2>Experiencia</h2>
+        <mat-divider></mat-divider>
+        <p>ñasldfjañsdlf</p>
+        <br>
+        <h2>Formación</h2>
+        <mat-divider/>
+        @for (formation of formations; track $index) {
+            <h4><u>{{formation.titulation}}</u></h4>
+            <p>{{formation.place}} // {{formation.duration}}</p>
+        }
+        <br>
+        <h2>Skills</h2>
+        <mat-divider/>
+        <p>ñlaksdjfñlaksdjf</p>
+        <br>
+        <h2>Idiomas</h2>
+        <mat-divider/>
+        <p>ñlaksdjfñlaksdjf</p>
+        <br>
+        <h2>Contacto</h2>
+        <mat-divider/>
+        <p>ñlaksdjfñlaksdjf</p>
+    </div>
+</div>
+
+

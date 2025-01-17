@@ -13,12 +13,12 @@ export class PresentationComponent implements OnInit {
     pageService = inject(SetPagesService)
     ngOnInit(): void {
       let pages : PagesChanger = {
-        next:'currículum vitae',
-        previous:'',
+        next:'elevator pitch',
+        previous:'currículum vitae',
         nextActive:true,
-        previousActive:false,
-        nextLink:'/curriculum',
-        previousLink:'',
+        previousActive:true,
+        nextLink:'/elevator',
+        previousLink:'/curriculum',
         centerElement:'Presentación Personal'
       }
   
