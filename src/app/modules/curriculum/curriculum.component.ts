@@ -4,16 +4,21 @@ import { PagesChanger } from '../../model/PagesChanger.model';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import {MatDividerModule} from '@angular/material/divider';
 import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { HttpClient, HttpClientModule, provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
 
 @Component({
   selector: 'app-curriculum',
   imports: [NgIcon, MatDividerModule],
   templateUrl: './curriculum.component.html',
   styleUrl: './curriculum.component.css',
-  providers: provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub })
+  providers: [ 
+    provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub })]
 })
 export class CurriculumComponent implements OnInit {
   
+  http = inject(HttpClient);
+  aboutMeText : string = '';
+
   pageService = inject(SetPagesService)
   ngOnInit(): void {
     let pages : PagesChanger = {
@@ -27,6 +32,10 @@ export class CurriculumComponent implements OnInit {
     }
 
     this.pageService.updatePages(pages)
+
+    this.http.get('assets/aboutMe.txt', { responseType: 'text' }).subscribe((data) => {
+      this.aboutMeText = data;
+    });
   }
 
   socialIcons =[
@@ -52,16 +61,5 @@ export class CurriculumComponent implements OnInit {
     }
   ]
 
-  formations = [
-    {
-      duration:'Septiembre 2023 - Marzo 2025',
-      titulation: 'Desarrollo de aplicaciones multiplataforma (DAM)',
-      place: 'Institut Montilivi'
-    },
-    {
-      duration:'Septiembre 2021 - Junio 2023',
-      titulation:'Animación 3D, juegos y entornos interactivos',
-      place:'CIFOG'
-    }
-  ]
+  
 }
