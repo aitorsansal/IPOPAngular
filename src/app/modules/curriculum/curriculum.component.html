@@ -23,7 +23,10 @@
         <br>
         <h2>Experiencia</h2>
         <mat-divider></mat-divider>
-        <p>ñasldfjañsdlf</p>
+        @for (experience of experiences; track $index) {
+            <h4><u>{{experience.titulation}}</u></h4>
+            <p>{{experience.place}} // {{experience.duration}}</p>
+        }
         <br>
         <h2>Formación</h2>
         <mat-divider/>
@@ -34,7 +37,10 @@
         <br>
         <h2>Skills</h2>
         <mat-divider/>
-        <p>ñlaksdjfñlaksdjf</p>
+        @for (skill of skills; track $index) {
+            <h4><u>{{skill.name}}</u></h4>
+            <mat-progress-bar mode="determinate" value={{skill.level*10}}></mat-progress-bar>
+        }
         <br>
         <h2>Idiomas</h2>
         <mat-divider/>

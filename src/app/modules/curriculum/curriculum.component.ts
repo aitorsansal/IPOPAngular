@@ -3,12 +3,14 @@ import { SetPagesService } from '../../services/set-pages.service';
 import { PagesChanger } from '../../model/PagesChanger.model';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub } from '@ng-icons/bootstrap-icons';
-import { HttpClient, HttpClientModule, provideHttpClient, withInterceptors, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-curriculum',
-  imports: [NgIcon, MatDividerModule],
+  imports: [NgIcon, MatDividerModule, CommonModule, MatProgressBarModule],
   templateUrl: './curriculum.component.html',
   styleUrl: './curriculum.component.css',
   providers: [ 
@@ -18,6 +20,9 @@ export class CurriculumComponent implements OnInit {
   
   http = inject(HttpClient);
   aboutMeText : string = '';
+  formations :any[] = []
+  experiences :any[] = []
+  skills : any[] = []
 
   pageService = inject(SetPagesService)
   ngOnInit(): void {
@@ -34,8 +39,12 @@ export class CurriculumComponent implements OnInit {
     this.pageService.updatePages(pages)
 
     this.http.get('assets/aboutMe.txt', { responseType: 'text' }).subscribe((data) => {
-      this.aboutMeText = data;
+      let form = (data as any).default;
+      this.aboutMeText = form;
     });
+    this.http.get<any[]>('assets/formations.json', { responseType: 'json' }). subscribe((data) => {this.formations = data;});
+    this.http.get<any[]>('assets/experiences.json', { responseType: 'json' }). subscribe((data) => {this.experiences = data;});
+    this.http.get<any[]>('assets/skills.json', { responseType: 'json' }). subscribe((data) => {this.skills = data;});
   }
 
   socialIcons =[
@@ -61,5 +70,4 @@ export class CurriculumComponent implements OnInit {
     }
   ]
 
-  
 }

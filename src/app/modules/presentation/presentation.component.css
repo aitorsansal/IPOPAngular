@@ -1,0 +1,9 @@
+.presentationHolder{
+    margin : 0 auto;
+    width: 750px;
+    font-size: large;
+}
+
+pre {
+    white-space: pre-wrap;
+}
