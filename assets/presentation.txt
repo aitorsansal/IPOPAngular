@@ -1,0 +1,22 @@
+A quien corresponda,
+
+Mi nombre es Aitor Sánchez, y me dirijo a ustedes con el propósito de postularme a un puesto relacionado con la programación en su empresa. 
+Mi experiencia académica y profesional, junto con mi pasión por el desarrollo de software, me convierten en un candidato motivado y comprometido.
+
+Durante mi formación en "3D y videojuegos", tuve la oportunidad de desarrollar un proyecto de fin de curso, 
+donde diseñé y programé un juego de rol (RPG) desde cero, centrándome en el funcionamiento interno mientras mi compañero se encargó del apartado de arte, utilizando C# y el motor Unity. 
+Este proyecto no solo me permitió perfeccionar mis habilidades técnicas, sino también gestionar todas las etapas del desarrollo, desde la planificación inicial hasta su implementación final.
+
+Durante la formación en "Desarrollo de Aplicaciones Multiplataforma", realicé prácticas en una empresa, donde adquirí experiencia práctica trabajando con Angular. 
+Este entorno me permitió profundizar en el desarrollo frontend, integrándome en un equipo y adaptándome a tecnologías nuevas con rapidez.
+
+Entre mis habilidades destacan:
+
+• Dominio de C#, tanto en el desarrollo de aplicaciones con Unity como en WPF.
+• Conocimiento de Kotlin y Jetpack Compose, así como de Python, lo que me proporciona versatilidad para trabajar en diferentes entornos.
+• Capacidad para adaptarme rápidamente a nuevas tecnologías y comprender sistemas complejos.
+• Trabajo en equipo efectivo, demostrado durante el desarrollo de proyectos en colaboración.
+• Compromiso y constancia, reflejados en mi dedicación a proyectos completos, desde la idea hasta su implementación.
+• Estoy disponible para incorporarme en cualquier momento y dispuesto a aportar mis conocimientos y habilidades para contribuir al éxito de su equipo. Me encantaría tener la oportunidad de conversar más sobre cómo puedo ser una pieza clave en sus proyectos.
+
+Agradezco de antemano su tiempo y quedo a su disposición para cualquier consulta o entrevista. 

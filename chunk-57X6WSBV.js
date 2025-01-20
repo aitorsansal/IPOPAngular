@@ -1,0 +1,1 @@
+import{Q as r,f as t}from"./chunk-3BRFMEX6.js";var s=class e{constructor(){}changePagesSubject=new t;changePagesObservable=this.changePagesSubject.asObservable();updatePages(a){this.changePagesSubject.next(a)}static \u0275fac=function(c){return new(c||e)};static \u0275prov=r({token:e,factory:e.\u0275fac,providedIn:"root"})};export{s as a};
