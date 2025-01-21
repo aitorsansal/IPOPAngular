@@ -1,0 +1,26 @@
+[
+    {
+      "icon": "bootstrapInstagram",
+      "link":"https://www.instagram.com/aitorsansal?igsh=NjFjMml0MHY4N2w="
+    },    
+    {
+        "icon":"bootstrapEnvelope",
+        "link":"mailto:aitorsansal@gmail.com"
+    },
+    {
+      "icon": "bootstrapGithub",
+      "link":"https://github.com/aitorsansal"
+    },
+    {
+      "icon": "bootstrapLinkedin",
+      "link":""
+    },
+    {
+      "icon": "bootstrapTwitch",
+      "link":"https://twitch.tv/aitorsansal"
+    },
+    {
+      "icon": "bootstrapTwitterX",
+      "link":""
+    }
+  ]
