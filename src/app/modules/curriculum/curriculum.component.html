@@ -38,13 +38,29 @@
         <h2>Skills</h2>
         <mat-divider/>
         @for (skill of skills; track $index) {
-            <h4><u>{{skill.name}}</u></h4>
+            <div class="skillTitle">
+                <h4><u>{{skill.name}}</u></h4>
+                @if (skill.star) {
+                    <ng-icon matTooltip="Passionate about this field" name="bootstrapStars"/>
+                }
+                @if(skill.comfort){
+                    <ng-icon matTooltip="Proficient and confident" name="bootstrapCodeSquare"/>
+                }
+                @if (skill.learning) {
+                    <ng-icon matTooltip="Currently learning" name="bootstrapBook"/>
+                }
+            </div>
             <mat-progress-bar mode="determinate" value={{skill.level*10}}></mat-progress-bar>
         }
         <br>
         <h2>Idiomas</h2>
         <mat-divider/>
-        <p>ñlaksdjfñlaksdjf</p>
+        @for (language of languages; track $index) {
+            <div class="languagesContainer">
+                <h4><u>{{language.language}}</u></h4>
+                <p>: {{language.level}}</p>
+            </div>
+        }
         <br>
         <h2>Contacto</h2>
         <mat-divider/>

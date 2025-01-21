@@ -2,19 +2,26 @@ import { Component, inject, OnInit } from '@angular/core';
 import { SetPagesService } from '../../services/set-pages.service';
 import { PagesChanger } from '../../model/PagesChanger.model';
 import { NgIcon, provideIcons } from '@ng-icons/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub } from '@ng-icons/bootstrap-icons';
+import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, 
+  bootstrapLinkedin, bootstrapGithub, bootstrapStars,
+  bootstrapCodeSquare, bootstrapBook } from '@ng-icons/bootstrap-icons';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-curriculum',
-  imports: [NgIcon, MatDividerModule, CommonModule, MatProgressBarModule],
+  imports: [NgIcon, MatDividerModule, 
+    CommonModule, MatProgressBarModule,
+  MatTooltipModule],
   templateUrl: './curriculum.component.html',
   styleUrl: './curriculum.component.css',
   providers: [ 
-    provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, bootstrapLinkedin, bootstrapGithub })]
+    provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX,
+      bootstrapLinkedin, bootstrapGithub, bootstrapStars,
+      bootstrapCodeSquare, bootstrapBook })]
 })
 export class CurriculumComponent implements OnInit {
   
@@ -23,6 +30,7 @@ export class CurriculumComponent implements OnInit {
   formations :any[] = []
   experiences :any[] = []
   skills : any[] = []
+  languages : any[] = []
 
   pageService = inject(SetPagesService)
   ngOnInit(): void {
@@ -44,7 +52,11 @@ export class CurriculumComponent implements OnInit {
     });
     this.http.get<any[]>('assets/formations.json', { responseType: 'json' }). subscribe((data) => {this.formations = data;});
     this.http.get<any[]>('assets/experiences.json', { responseType: 'json' }). subscribe((data) => {this.experiences = data;});
-    this.http.get<any[]>('assets/skills.json', { responseType: 'json' }). subscribe((data) => {this.skills = data;});
+    this.http.get<any[]>('assets/skills.json', { responseType: 'json' }). subscribe((data) => {
+      data.sort((el1, el2) => -(el1.level - el2.level));
+      this.skills = data;
+      });
+    this.http.get<any[]>('assets/languages.json', { responseType: 'json' }). subscribe((data) => {this.languages = data;});    
   }
 
   socialIcons =[

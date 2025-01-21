@@ -35,3 +35,22 @@ a{
 .curriculumContainer{
     margin-bottom: 500px;
 }
+
+.skillTitle{
+    display: flex;
+    align-items: center;
+}
+
+.skillTitle ng-icon{
+    padding-left: 2px;
+    color: var(--sl-color-accent);
+}
+.skillTitle h4{
+    padding-right: 5px;
+}
+
+.languagesContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
