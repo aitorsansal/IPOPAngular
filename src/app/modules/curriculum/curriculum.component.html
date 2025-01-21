@@ -39,8 +39,13 @@
         <h2>Formación</h2>
         <mat-divider/>
         @for (formation of formations; track $index) {
-            <h4><u>{{formation.titulation}}</u></h4>
-            <p>{{formation.place}} // {{formation.duration}}</p>
+            <div class="experienceContainer">
+                <div class="leftZone">
+                    <p class="title"><u>{{formation.titulation}}</u></p>
+                    <p class="place">{{formation.place}}</p>
+                    <p class="duration">{{formation.duration}}</p>
+                </div>
+            </div>
         }
         <br>
         <h2>Skills</h2>
@@ -49,13 +54,13 @@
             <div class="skillTitle">
                 <h4><u>{{skill.name}}</u></h4>
                 @if (skill.star) {
-                    <ng-icon matTooltip="Passionate about this field" name="bootstrapStars"/>
+                    <ng-icon matTooltip="Apasionado por este campo" name="bootstrapStars"/>
                 }
                 @if(skill.comfort){
-                    <ng-icon matTooltip="Proficient and confident" name="bootstrapCodeSquare"/>
+                    <ng-icon matTooltip="Competente y seguro" name="bootstrapCodeSquare"/>
                 }
                 @if (skill.learning) {
-                    <ng-icon matTooltip="Currently learning" name="bootstrapBook"/>
+                    <ng-icon matTooltip="Actualmente en proceso de aprendizaje" name="bootstrapBook"/>
                 }
             </div>
             <mat-progress-bar mode="determinate" value={{skill.level*10}}></mat-progress-bar>
@@ -81,9 +86,6 @@
         </mat-grid-list>
 
         <br>
-        <h2>Contacto</h2>
-        <mat-divider/>
-        <p>ñlaksdjfñlaksdjf</p>
     </div>
 </div>
 

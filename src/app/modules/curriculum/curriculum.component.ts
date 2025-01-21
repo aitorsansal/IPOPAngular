@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, linkedSignal, OnInit } from '@angular/core';
 import { SetPagesService } from '../../services/set-pages.service';
 import { PagesChanger } from '../../model/PagesChanger.model';
 import { NgIcon, provideIcons } from '@ng-icons/core';
@@ -8,7 +8,7 @@ import { MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, 
   bootstrapLinkedin, bootstrapGithub, bootstrapStars,
-  bootstrapCodeSquare, bootstrapBook } from '@ng-icons/bootstrap-icons';
+  bootstrapCodeSquare, bootstrapBook, bootstrapEnvelope } from '@ng-icons/bootstrap-icons';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
@@ -22,7 +22,7 @@ import { CommonModule } from '@angular/common';
   providers: [ 
     provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX,
       bootstrapLinkedin, bootstrapGithub, bootstrapStars,
-      bootstrapCodeSquare, bootstrapBook })]
+      bootstrapCodeSquare, bootstrapBook, bootstrapEnvelope })]
 })
 export class CurriculumComponent implements OnInit {
   
@@ -32,6 +32,7 @@ export class CurriculumComponent implements OnInit {
   experiences :any[] = []
   skills : any[] = []
   languages : any[] = []
+  socialIcons : any[] = []
 
   pageService = inject(SetPagesService)
   ngOnInit(): void {
@@ -58,29 +59,8 @@ export class CurriculumComponent implements OnInit {
       this.skills = data;
       });
     this.http.get<any[]>('assets/languages.json', { responseType: 'json' }). subscribe((data) => {this.languages = data;});    
+    this.http.get<any[]>('assets/socials.json', { responseType: 'json' }). subscribe((data) => {this.socialIcons = data;});
   }
 
-  socialIcons =[
-    {
-      icon: 'bootstrapInstagram',
-      link:'https://www.instagram.com/aitorsansal?igsh=NjFjMml0MHY4N2w='
-    },
-    {
-      icon: 'bootstrapTwitch',
-      link:'https://twitch.tv/aitorsansal'
-    },
-    {
-      icon: 'bootstrapTwitterX',
-      link:''
-    },
-    {
-      icon: 'bootstrapLinkedin',
-      link:''
-    },
-    {
-      icon: 'bootstrapGithub',
-      link:'https://github.com/aitorsansal'
-    }
-  ]
 
 }

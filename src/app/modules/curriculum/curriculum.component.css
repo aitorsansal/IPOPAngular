@@ -61,6 +61,7 @@ a{
     font-size: 24px;
     color: var(--sl-color-accent);
 }
+
 .leftZone .place{
     font-size: 20px;
     color: var(--sl-color-accent-high);
@@ -139,6 +140,81 @@ mat-grid-tile {
 .languageProgressBar p {
     margin: 0;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .curriculumScreenContainer {
+        margin: 0 auto;
+        width: auto;
+        margin-bottom: 210px;
+        padding: 0 10px; /* Add some padding for better spacing */
+    }
+    .experienceContainer{
+        flex-direction: column;
+    }
+    .experienceContainer .description{
+        margin: 0;
+    }
+
+    .personalInformation {
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .personalInformation img {
+        width: 100px;
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust other elements as needed */
+    .sectionTitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .experience, .education, .skills, .languages {
+        width: auto;
+        padding: 0 10px;
+    }
+
+    .experience .details, .education .details, .skills .details, .languages .details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience .details img, .education .details img, .skills .details img, .languages .details img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .experience .details p, .education .details p, .skills .details p, .languages .details p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .contactInfo {
+        width: auto;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contactInfo p {
+        font-size: 1rem;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .socialIcons a {
+        margin: 5px;
+    }
 }
 
 

@@ -33,5 +33,11 @@ p{
 	active-indicator-height: 11px,
 	track-height:11px
 ));
+
+@include mat.tooltip-overrides((
+    container-color: var(--sl-color-gray-4),
+    supporting-text-color: var(--sl-color-accent-high),
+  ));
+
 html, body { height: 100%; }
 body { margin: 0; font-family: "Helvetica Neue", sans-serif; }
