@@ -10,7 +10,7 @@ import { BottomBarComponent } from './components/bottom-bar/bottom-bar.component
   selector: 'app-root',
   imports: [MatSidenavModule, MatToolbarModule, MatButtonModule, MatIconModule, RouterLink, RouterOutlet, BottomBarComponent],
   templateUrl:'./app.component.html',
-  styleUrl:'./app.component.css'
+  styleUrl:'./app.component.scss'
 })
 export class AppComponent {
   title = 'IPOPAngular';

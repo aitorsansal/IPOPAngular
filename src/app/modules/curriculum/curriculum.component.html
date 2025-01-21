@@ -24,8 +24,16 @@
         <h2>Experiencia</h2>
         <mat-divider></mat-divider>
         @for (experience of experiences; track $index) {
-            <h4><u>{{experience.titulation}}</u></h4>
-            <p>{{experience.place}} // {{experience.duration}}</p>
+            <div class="experienceContainer">
+                <div class="leftZone">
+                    <p class="title"><u>{{experience.titulation}}</u></p>
+                    <p class="place">{{experience.place}}</p>
+                    <p class="duration">{{experience.duration}}</p>
+                </div>
+                <div class="description">
+                    <p>{{experience.description}}</p>
+                </div>
+            </div>
         }
         <br>
         <h2>Formación</h2>
@@ -54,13 +62,24 @@
         }
         <br>
         <h2>Idiomas</h2>
-        <mat-divider/>
-        @for (language of languages; track $index) {
-            <div class="languagesContainer">
-                <h4><u>{{language.language}}</u></h4>
-                <p>: {{language.level}}</p>
-            </div>
-        }
+        <mat-divider></mat-divider>
+        <mat-grid-list cols="2" rowHeight="3:1">
+            @for (language of languages; track $index) {
+                <mat-grid-tile>
+                    <div class="languagesContainer">
+                        <div class="languageInfo">
+                            <h4>{{language.language}}:</h4>
+                        </div>
+                        <div class="languageProgressBar">
+                            <p>{{language.start}}</p>
+                            <mat-progress-bar mode="determinate" value={{language.progressBarValue}}></mat-progress-bar>                            
+                            <p>{{language.end}}</p>
+                        </div>
+                    </div>
+                </mat-grid-tile>
+            }
+        </mat-grid-list>
+
         <br>
         <h2>Contacto</h2>
         <mat-divider/>

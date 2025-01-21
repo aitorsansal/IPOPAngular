@@ -4,6 +4,7 @@ import { PagesChanger } from '../../model/PagesChanger.model';
 import { NgIcon, provideIcons } from '@ng-icons/core';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatDividerModule} from '@angular/material/divider';
+import { MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, 
   bootstrapLinkedin, bootstrapGithub, bootstrapStars,
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-curriculum',
   imports: [NgIcon, MatDividerModule, 
     CommonModule, MatProgressBarModule,
-  MatTooltipModule],
+  MatTooltipModule, MatGridListModule],
   templateUrl: './curriculum.component.html',
   styleUrl: './curriculum.component.css',
   providers: [ 

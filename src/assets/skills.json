@@ -7,8 +7,15 @@
         "learning": true
     },
     {
+        "name": "Angular",
+        "level": 5,
+        "star": true,
+        "comfort": false,
+        "learning": true
+    },
+    {
         "name": "CSS",
-        "level": 3,
+        "level": 5,
         "star": false,
         "comfort": false,
         "learning": true
@@ -54,12 +61,5 @@
         "star": false,
         "comfort": false,
         "learning": false
-    },
-    {
-        "name": "Angular",
-        "level": 5,
-        "star": true,
-        "comfort": false,
-        "learning": true
     }
 ]
