@@ -1,62 +1,65 @@
 [
     {
         "name": "HTML",
-        "level": 5
+        "level": 4,
+        "star": false,
+        "comfort": false,
+        "learning": true
     },
     {
         "name": "CSS",
-        "level": 5
+        "level": 3,
+        "star": false,
+        "comfort": false,
+        "learning": true
     },
     {
         "name": "JavaScript",
-        "level": 5
+        "level": 3,
+        "star": false,
+        "comfort": false,
+        "learning": true
     },
     {
-        "name": "React",
-        "level": 5
-    },
-    {
-        "name": "Node.js",
-        "level": 4
-    },
-    {
-        "name": "Express",
-        "level": 4
-    },
-    {
-        "name": "MongoDB",
-        "level": 4
+        "name": "MySql",
+        "level": 3,
+        "star": false,
+        "comfort": false,
+        "learning": false
     },
     {
         "name": "Python",
-        "level": 3
-    },
-    {
-        "name": "Django",
-        "level": 3
-    },
-    {
-        "name": "Java",
-        "level": 3
-    },
-    {
-        "name": "C++",
-        "level": 3
-    },
-    {
-        "name": "C#",
-        "level": 3
+        "level": 4,
+        "star": false,
+        "comfort": false,
+        "learning": false
     },
     {
         "name": "Unity",
-        "level": 3
+        "level": 7,
+        "star": true,
+        "comfort": true,
+        "learning": true
     },
     {
-        "name": "SQL",
-        "level": 3
+        "name": "C#",
+        "level": 7,
+        "star": false,
+        "comfort": true,
+        "learning": true
     },
     {
         "name": "Git",
-        "level": 4
+        "level": 6,
+        "star": false,
+        "comfort": false,
+        "learning": false
+    },
+    {
+        "name": "Angular",
+        "level": 5,
+        "star": true,
+        "comfort": false,
+        "learning": true
     }
 ]
