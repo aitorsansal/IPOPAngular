@@ -26,7 +26,7 @@
         @for (experience of experiences; track $index) {
             <div class="experienceContainer">
                 <div class="leftZone">
-                    <p class="title"><u>{{experience.titulation}}</u></p>
+                    <p class="title">{{experience.titulation}}</p>
                     <p class="place">{{experience.place}}</p>
                     <p class="duration">{{experience.duration}}</p>
                 </div>
@@ -41,7 +41,7 @@
         @for (formation of formations; track $index) {
             <div class="experienceContainer">
                 <div class="leftZone">
-                    <p class="title"><u>{{formation.titulation}}</u></p>
+                    <p class="title">{{formation.titulation}}</p>
                     <p class="place">{{formation.place}}</p>
                     <p class="duration">{{formation.duration}}</p>
                 </div>
@@ -52,9 +52,9 @@
         <mat-divider/>
         @for (skill of skills; track $index) {
             <div class="skillTitle">
-                <h4><u>{{skill.name}}</u></h4>
+                <h4>{{skill.name}}</h4>
                 @if (skill.star) {
-                    <ng-icon matTooltip="Apasionado por este campo" name="bootstrapStars"/>
+                    <ng-icon matTooltip="Apasionado por este campo" name="bootstrapStarFill"/>
                 }
                 @if(skill.comfort){
                     <ng-icon matTooltip="Competente y seguro" name="bootstrapCodeSquare"/>

@@ -25,8 +25,9 @@
     display: flex;
     flex-direction: row;
 }
-ng-icon{
+.socials ng-icon{
     padding-right: 10px;   
+    font-size: 20px;
 }
 a{
     color: var(--sl-color-accent-high);
@@ -73,7 +74,7 @@ a{
 }
 
 .skillTitle ng-icon{
-    padding-left: 2px;
+    padding-left: 10px;
     color: var(--sl-color-accent);
 }
 .skillTitle h4{

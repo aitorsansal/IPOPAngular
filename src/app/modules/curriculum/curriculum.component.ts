@@ -7,8 +7,8 @@ import {MatDividerModule} from '@angular/material/divider';
 import { MatGridListModule} from '@angular/material/grid-list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, 
-  bootstrapLinkedin, bootstrapGithub, bootstrapStars,
-  bootstrapCodeSquare, bootstrapBook, bootstrapEnvelope } from '@ng-icons/bootstrap-icons';
+  bootstrapLinkedin, bootstrapGithub, bootstrapCodeSquare,
+   bootstrapBook, bootstrapEnvelope, bootstrapStarFill } from '@ng-icons/bootstrap-icons';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
@@ -21,8 +21,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './curriculum.component.css',
   providers: [ 
     provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX,
-      bootstrapLinkedin, bootstrapGithub, bootstrapStars,
-      bootstrapCodeSquare, bootstrapBook, bootstrapEnvelope })]
+      bootstrapLinkedin, bootstrapGithub, bootstrapCodeSquare,
+       bootstrapBook, bootstrapEnvelope, bootstrapStarFill })]
 })
 export class CurriculumComponent implements OnInit {
   

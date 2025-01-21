@@ -4,27 +4,27 @@
         "level":"C1",
         "start":"A1",
         "end":"C2",
-        "progressBarValue":80
+        "progressBarValue":85
     },
     {
         "language": "Español",
         "level":"C1",
         "start":"A1",
         "end":"C2",
-        "progressBarValue":80
+        "progressBarValue":85
     },
     {
         "language": "Inglés",
         "level":"B2",
         "start":"A1",
         "end":"C2",
-        "progressBarValue":68
+        "progressBarValue":75
     },
     {
         "language": "Japonés",
         "level":"N5",
         "start":"N5",
         "end":"N1",
-        "progressBarValue":20
+        "progressBarValue":25
     }
 ]
