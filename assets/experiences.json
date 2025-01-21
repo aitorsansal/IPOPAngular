@@ -1,15 +1,15 @@
 [
     {
-      "titulation": "Desarrollo de Aplicaciones Multiplataforma (DAM)",
-      "place": "Institut Montilivi",
-      "duration": "Septiembre 2023 - Marzo 2025",
-      "description": "Studied various aspects of computer science including algorithms, data structures, and software engineering."
+      "titulation": "Prácticas de empresa de grado superior DAM",
+      "place": "Accenture",
+      "duration": "Diciembre 2024 - Actualmente",
+      "description": "He hecho mis prácticas de empresa en Accenture, en el departamento de desarrollo de frontend, aprendiendo a usar Angular y TypeScript. El poder ir a la oficina y relacionarme con mis compañeros, me ha proporcionado la confianza para seguir adelante en mi carrera."
     },
     {
-      "titulation": "Animación 3D, Juegos y Entornos Interactivos",
+      "titulation": "Proyecto final de grado superior en 3D y Videojuegos",
       "place": "CIFOG",
-      "duration": "Septiembre 2021 - Junio 2023",
-      "description": "Focused on machine learning, neural networks, and natural language processing."
+      "duration": "Diciembre 2022 - Junio 2023",
+      "description": "Con mi compañero de trabajo, conseguí crear un videojuego en Unity, utilizando C# y Blender. Este proyecto me ha permitido aprender a trabajar en equipo y a gestionar el tiempo de manera eficiente, aprendiendo las fases de producción de un proyecto y adaptándome a los posibles problemas que aparecían."
     },
     {
         "titulation":  "Bachillerato Tecnológico",
