@@ -1,0 +1,7 @@
+¡Hola! Soy Aitor Sánchez y quiero compartir un poco sobre mí. Mi pasión por la tecnología y la programación comenzó desarrollando videojuegos, tras completar un ciclo formativo de grado superior en 3D y entornos interactivos.
+
+Más tarde, decidí seguir aprendiendo y cursé un ciclo formativo en Desarrollo de Aplicaciones Multiplataforma (DAM), donde consolidé mis habilidades en C# y aprendí Python, MySQL y Kotlin Jetpack Compose. Durante mis prácticas, trabajé con Angular, lo que despertó mi interés por otras tecnologías como React, Astro y JavaScript.
+
+Además de mi experiencia profesional, también realizo directos en Twitch, donde comparto contenido relacionado con programación, videojuegos y tecnología. Mis transmisiones son una oportunidad para conectar con otros apasionados de estos temas, intercambiar ideas y aprender juntos.
+
+Estoy comprometido con el aprendizaje continuo y siempre busco desafíos emocionantes donde pueda aportar y crecer. Si quieres saber más sobre mis proyectos o unirte a uno de mis directos, ¡te invito a explorar mi página y conectarte conmigo!

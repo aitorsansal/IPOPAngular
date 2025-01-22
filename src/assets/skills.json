@@ -56,10 +56,13 @@
         "learning": true
     },
     {
-        "name": "Git",
-        "level": 6,
-        "star": false,
-        "comfort": false,
-        "learning": false
+        "name": "React",
+        "level": 0.1,
+        "learning": true
+    },
+    {
+        "name": "Astro",
+        "level": 0.1,
+        "learning": true
     }
 ]

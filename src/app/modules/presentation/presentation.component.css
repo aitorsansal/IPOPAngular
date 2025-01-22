@@ -1,9 +1,19 @@
 .presentationHolder{
     margin : 0 auto;
-    width: 750px;
+    margin-bottom: 50px;
+    width: 56rem;
     font-size: large;
 }
 
 pre {
     white-space: pre-wrap;
+}
+
+@media(max-width: 768px) {
+    .presentationHolder {
+        margin: 0 auto;
+        width: auto;
+        margin-bottom: 210px;
+        padding: 0 10px; /* Add some padding for better spacing */
+    }
 }

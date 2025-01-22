@@ -76,6 +76,7 @@ a{
 .skillTitle ng-icon{
     padding-left: 10px;
     color: var(--sl-color-accent);
+    font-weight: bolder;
 }
 .skillTitle h4{
     padding-right: 5px;
