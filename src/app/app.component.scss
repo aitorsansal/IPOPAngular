@@ -17,16 +17,7 @@
     margin-left: 1.5rem;
     margin-top: 1rem;
 }
-
-img{
-    filter: invert(28%) sepia(99%) saturate(7489%) hue-rotate(357deg) brightness(107%) contrast(113%);
-    margin-left: 20px;
-    width: 210px;
-    height: auto;
-    padding-right: 50px;
-    padding-left: 15px;
-}
-section{
+.topBar section{
     position: relative;
     display: flex;
     height: 100%;
@@ -36,6 +27,15 @@ section{
     width: 100%;
     align-items: center;
 }
+
+.topBar section img{
+    filter: invert(28%) sepia(99%) saturate(7489%) hue-rotate(357deg) brightness(107%) contrast(113%);
+    margin-left: 20px;
+    width: 210px;
+    height: auto;
+    padding-right: 50px;
+    padding-left: 15px;
+}
 .topBar{
     border: 2px solid var(--sl-color-b);
     background-color: var(--sl-color-gray-4);
@@ -44,8 +44,22 @@ section{
     justify-content: left;
     width: 100%;
     height: auto;
+    top: 0;
+    left: 0;
     box-shadow: 0px 15px -15px -7px #0000002e;    
+    position: sticky;
+    z-index: 1000;
+    transition: height 0.3s ease, box-shadow 0.3s ease;
 }
+.scrollableContainer{
+    overflow-y: auto;
+    height: 100vh;
+}
+.topBar.scrolled{
+    height: 48px;
+    box-shadow: 0px 4px 6 px rgba(0,0,0,0.1);
+}
+
 .textZone{
     display: block;
     align-items: center;

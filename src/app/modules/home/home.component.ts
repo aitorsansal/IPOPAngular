@@ -3,17 +3,20 @@ import { SetPagesService } from '../../services/set-pages.service';
 import { PagesChanger } from '../../model/PagesChanger.model';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  imports: [CommonModule]
 })
 export class HomeComponent implements OnInit {
   pagesService = inject(SetPagesService);
   http = inject(HttpClient);
   sanitizer = inject(DomSanitizer);
   aboutMeText: SafeHtml = '';
+  projects : any[] = []
 
   ngOnInit(): void {
     let pages: PagesChanger = {
@@ -49,6 +52,10 @@ export class HomeComponent implements OnInit {
       }
 
       this.aboutMeText = this.sanitizer.bypassSecurityTrustHtml(formattedData);
+    });
+
+    this.http.get<any[]>("assets/projects.json", {responseType: 'json'}).subscribe(data => {
+      this.projects = data;
     });
   }
 }

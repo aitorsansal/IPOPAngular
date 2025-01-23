@@ -13,25 +13,23 @@
             }
         </ul>
     </mat-sidenav>
-    <mat-toolbar class="topBar">
-        <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <section>
-            <img src="assets/img/logoBlanc.svg" alt="Logo montilivi"/>
-            <div class="textZone">
-                <h1 class="name">Aitor Sánchez</h1>
-                <h3>IPOP</h3>
-            </div>
-            <button mat-icon-button [routerLink]="['/']"  class="homeIcon">
-                <mat-icon>home</mat-icon>
+    <mat-sidenav-content #scrollable class="scrollableContainer">
+        <mat-toolbar class="topBar">
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
             </button>
-        </section>
-    </mat-toolbar>
-    <app-bottom-bar/>
-    <router-outlet/>
+            <section>
+                <img src="assets/img/logoBlanc.svg" alt="Logo montilivi"/>
+                <div class="textZone">
+                    <h1 class="name">Aitor Sánchez</h1>
+                    <h3>IPOP</h3>
+                </div>
+                <button mat-icon-button [routerLink]="['/']"  class="homeIcon">
+                    <mat-icon>home</mat-icon>
+                </button>
+            </section>
+        </mat-toolbar>
+        <app-bottom-bar/>
+        <router-outlet/>
+    </mat-sidenav-content>
 </mat-sidenav-container>
-
-
-
-
