@@ -4,11 +4,12 @@ import { PagesChanger } from '../../model/PagesChanger.model';
 import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { map } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
+  styleUrls: ['./home.component.css'],
   imports: [CommonModule]
 })
 export class HomeComponent implements OnInit {
@@ -54,8 +55,17 @@ export class HomeComponent implements OnInit {
       this.aboutMeText = this.sanitizer.bypassSecurityTrustHtml(formattedData);
     });
 
-    this.http.get<any[]>("assets/projects.json", {responseType: 'json'}).subscribe(data => {
+    this.http.get<any[]>("assets/projects.json", {responseType: 'json'}).pipe(
+      map(projects => projects.map(project => {
+        if (project.pdf) {
+          project.pdf = this.sanitizer.bypassSecurityTrustResourceUrl(project.pdf);
+        }
+        return project;
+      }))
+    ).subscribe(data => {
       this.projects = data;
+      console.log(this.projects)
     });
+
   }
 }
