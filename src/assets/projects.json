@@ -2,8 +2,27 @@
     {
         "name":"Echoes of Light",
         "pdf":"assets/Echoes of Light GDD.pdf",
+        "img":"assets/img/EchoesOfLight.gif",
         "forWhat":"Proyecto final 3D y Desarrollo de entornos interactivos",
         "description":"RPG por turnos"
+    },
+    {
+        "name":"Image testing",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Testing",
+        "description":"Img testing"
+    },
+    {
+        "name":"Image testing",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Testing",
+        "description":"Img testing"
+    },
+    {
+        "name":"Image testing",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Testing",
+        "description":"Img testing"
     },
     {
         "name":"Image testing",
