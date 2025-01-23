@@ -1,0 +1,14 @@
+[
+    {
+        "name":"Echoes of Light",
+        "pdf":"Echoes of Light GDD.pdf",
+        "forWhat":"Proyecto final 3D y Desarrollo de entornos interactivos",
+        "description":"RPG por turnos"
+    },
+    {
+        "name":"Image testing",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Testing",
+        "description":"Img testing"
+    }
+]
