@@ -11,7 +11,8 @@
                         <img [src]="project.img" alt="project image" class="projectImg"/>
                         <div class="projectInformation">
                             <h2>{{project.name}}</h2>
-                            <p>{{project.description}}</p>
+                            <p>{{project.forWhat}}</p>
+                            <div class="projectDescription" [innerHTML]="project.description"></div>
                             <a href="assets/Echoes of Light GDD.pdf" target="_blank" rel="noopener noreferrer">Link</a>
                         </div>
                     </div>
