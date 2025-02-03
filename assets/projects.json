@@ -2,13 +2,32 @@
     {
         "name":"Echoes of Light",
         "pdf":"assets/Echoes of Light GDD.pdf",
+        "img":"assets/img/EchoesOfLight.gif",
         "forWhat":"Proyecto final 3D y Desarrollo de entornos interactivos",
         "description":"RPG por turnos"
     },
     {
-        "name":"Image testing",
+        "name":"Copia de Spotify con Angular",
+        "img":"assets/img/Spotify.png",
+        "forWhat":"Aprender angular",
+        "description":"Primer proyecto de angular que hice, con el propósito de aprender todas las coasa básicas que se pueden hacer, siguiendo el <a href=\"https://www.udemy.com/course/angular-principiantes-leifer-mendez/\">curso de Leifer Mendez</a>"
+    },
+    {
+        "name":"Aplicación para practicar Japonés",
         "img":"assets/img/logoBlanc.svg",
-        "forWhat":"Testing",
-        "description":"Img testing"
+        "forWhat":"Pràctica de japonés",
+        "description":"Una aplicación para practicar japonés, con la posibilidad de añadir tus propias palabras y frases. Pensada para usarla yo mismo en mis estudios. Desarrollada en mis <a href=\"https://twitch.tv/aitorsansal>directos de Twitch</a>"
+    },
+    {
+        "name":"Nexus Of Nine",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Desarrollo de videojuegos",
+        "description":"Un juego RPG por turnos, desarrollado en Unity, en conjunto con mi primo quien ayuda con el arte. La intención es hacerlo comercial más adelante."
+    },
+    {
+        "name":"Dungeon Roguelite",
+        "img":"assets/img/logoBlanc.svg",
+        "forWhat":"Desarrollo de videojuegos",
+        "description":"Un juego RogueLite de Mazmorras,"
     }
 ]
