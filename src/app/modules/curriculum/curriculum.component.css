@@ -147,7 +147,7 @@ mat-grid-tile {
 @media (max-width: 768px) {
     .curriculumScreenContainer {
         margin: 0 auto;
-        width: auto;
+        width: 95%;
         margin-bottom: 210px;
         padding: 0 10px; /* Add some padding for better spacing */
     }
