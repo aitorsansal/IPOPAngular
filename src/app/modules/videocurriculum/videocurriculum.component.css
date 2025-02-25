@@ -1,0 +1,31 @@
+.videoContainer {
+    width: 56rem;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+
+.video {
+    width: 100%;
+    height: auto; /* Adjusts height based on video aspect ratio */
+    border-radius: 8px;
+    object-fit: cover; /* Removes black borders */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 16/9;
+}
+
+.videoInformation {
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+@media(max-width: 768px){
+    .videoContainer{
+        margin: 0 auto;
+        padding: 0 10px;
+        width: 95%;
+        margin-bottom: 210px;
+    }
+}
