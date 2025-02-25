@@ -20,13 +20,13 @@
     },
     {
         "name":"Aplicación para practicar Japonés",
-        "img":"assets/img/logoBlanc.svg",
+        "img":"assets/img/japaneseApp.png",
         "forWhat":"Pràctica de japonés",
         "description":"Una aplicación para practicar japonés, con la posibilidad de añadir tus propias palabras y frases. Pensada para usarla yo mismo en mis estudios. Desarrollada en mis <a href=\"https://twitch.tv/aitorsansal>directos de Twitch</a>"
     },
     {
         "name":"Dungeon Roguelite",
-        "img":"assets/img/logoBlanc.svg",
+        "img":"assets/img/dungeonRoguelike.png",
         "forWhat":"Desarrollo de videojuegos",
         "description":"Un juego RogueLite de Mazmorras, con generación procedural y gestión de recursos. Desarrollado en Unity, con la intención de hacerlo comercial más adelante."
     }
