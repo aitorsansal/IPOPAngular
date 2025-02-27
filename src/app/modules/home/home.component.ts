@@ -5,12 +5,20 @@ import { HttpClient } from '@angular/common/http';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { map } from 'rxjs';
+import { NgIcon, provideIcons } from '@ng-icons/core';
+import { bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX, 
+  bootstrapLinkedin, bootstrapGithub, bootstrapCodeSquare,
+   bootstrapBook, bootstrapEnvelope, bootstrapStarFill } from '@ng-icons/bootstrap-icons';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  imports: [CommonModule]
+  imports: [CommonModule, NgIcon],
+  providers: [ 
+    provideIcons({ bootstrapInstagram, bootstrapTwitch, bootstrapTwitterX,
+      bootstrapLinkedin, bootstrapGithub, bootstrapCodeSquare,
+       bootstrapBook, bootstrapEnvelope, bootstrapStarFill })]
 })
 export class HomeComponent implements OnInit {
   pagesService = inject(SetPagesService);
@@ -18,6 +26,7 @@ export class HomeComponent implements OnInit {
   sanitizer = inject(DomSanitizer);
   aboutMeText: SafeHtml = '';
   projects : any[] = []
+  socialIcons : any[] = []
 
   ngOnInit(): void {
     let pages: PagesChanger = {
@@ -53,6 +62,7 @@ export class HomeComponent implements OnInit {
       }
 
       this.aboutMeText = this.sanitizer.bypassSecurityTrustHtml(formattedData);
+      this.http.get<any[]>('assets/socials.json', { responseType: 'json' }). subscribe((data) => {this.socialIcons = data;});
     });
 
     this.http.get<any[]>("assets/projects.json", {responseType: 'json'}).pipe(

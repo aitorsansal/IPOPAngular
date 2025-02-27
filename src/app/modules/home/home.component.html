@@ -1,7 +1,25 @@
 <div class="homeContainer">
     <div class="aboutMeContainer">
-        <h1>About Me</h1>
-        <div [innerHTML]="aboutMeText"></div>
+        <div class="personalInformation">
+            <div class="photoText">
+                <div class="imgContainer">
+                    <img src="assets/img/profileImg.png" alt="Avatar" class="avatar">
+                </div>
+                <div class="textInformation">
+                    <h1>Aitor Sánchez</h1>
+                    <h3>Desarrollo Aplicaciones Multiplataforma</h3>
+                    <h3>Desarrollo de Videojuegos</h3>
+                    <div class="socials">
+                        @for (socials of socialIcons; track $index) {
+                            <a href="{{socials.link}}">
+                                <ng-icon name="{{socials.icon}}"/>
+                            </a>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="information" [innerHTML]="aboutMeText"></div>
+        </div>
     </div>
     <div class="projectsContainer">
         <h1>Projects</h1>

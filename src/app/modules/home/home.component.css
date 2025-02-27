@@ -3,6 +3,62 @@
     width: 56rem;
     margin-bottom: 128px;
 }
+.photoText{
+    border: solid black 2px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    min-width: 230px;
+    background-color: #403441;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.imgContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.information{
+    height: auto;
+    margin-top: 25px;
+}
+
+.personalInformation{
+    margin: 0 auto;
+    width: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.personalInformation img{
+    width: 200px;
+    height: auto;
+    border-radius: 15%;
+}
+.personalInformation .social{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    margin: 0 15px;
+    justify-content: space-evenly;
+}
+
+.socials ng-icon{
+    padding-right: 10px;   
+    font-size: 20px;
+}
+a{
+    color: var(--sl-color-accent-high);
+}
+
 .project{
     display: flex;
     flex-direction: row;
